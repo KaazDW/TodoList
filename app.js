@@ -15,7 +15,7 @@ function addTask() {
 
             var li = document.createElement('li');
             li.setAttribute('id','task');
-            li.className="flex items-center bg-slate-700 text-white mt-2";
+            li.className="flex items-center bg-slate-700 text-white mt-2 rounded";
 
             var txt = document.createElement('p');
             txt.className = 'mx-2 max-w-md';
