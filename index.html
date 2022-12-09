@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>k.Todolist</title>
-    <link href="css/style.css" rel="stylesheet">
-
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
 </head>
-<body>
-    <main>
-        <section class="todolist">
+<body class="bg-slate-900">
+    <main class="h-screen flex items-center justify-center">
+        <section class="bg-slate-800 rounded px-10 py-8 max-w-md">
+            <h2 class="text-white text-xl font-bold text-center"><a href="https://github.com/kaazdw">k.</a><a href="https://github.com/KaazDW/TodoList">TodoList <i class="icofont-tasks-alt"></i></a></h2>
+            <p class="text-slate-400 text-center">Made w/ Vanilla Javascript & TailwindCSS</p>
             <form>
-                <input type="text" id="taskInput" placeholder="Enter a new task">
-                <button type="button" onclick="addTask()">Add Task</button>
-            </form>
-            <ul id="todoList"></ul>
+                <input type="text" id="taskInput" placeholder="Enter a new task" class="rounded py-1 px-2">
+                <button type="button" onclick="addTask()" class="font-bold bg-sky-500/100 rounded px-6 p-2 m-2">Add Task <i class="icofont-edit"></i></button>
 
+            </form>
+            <ul id="todoList" class="flex flex-col">
+            
+            <!-- <li class="flex items-center bg-slate-700 text-white">
+                <i class="icofont-interface m-2 " ></i>
+                <p class="mx-2 max-w-md">Tache de fou</p>
+            </li> -->
+
+            </ul>
         </section>
     </main>
     <script src="app.js"></script>

@@ -1,6 +1,7 @@
 console.log('JS FILE SUCCESSFULLY LOAD');
 
 let TaskArr = [];
+var cpt=0;
 
 function addTask() {
     newTask = document.getElementById('taskInput').value;
@@ -14,18 +15,18 @@ function addTask() {
 
             var li = document.createElement('li');
             li.setAttribute('id','task');
-
-            li.className="TaskLine";
+            li.className="flex items-center bg-slate-700 text-white mt-2";
 
             var txt = document.createElement('p');
+            txt.className = 'mx-2 max-w-md';
             txt.innerHTML = TaskArr[pos];
 
-            var icon = document.createElement('img');
-            icon.src = 'icon.png';
+            var icon = document.createElement('i');
+            icon.className = 'icofont-interface m-2';
 
             document.getElementById('todoList').appendChild(li);
-            document.getElementById('task').appendChild(icon);
-            document.getElementById('task').appendChild(txt);
+            li.appendChild(icon);
+            li.appendChild(txt);
 
             document.getElementById('taskInput').value = '';
 
