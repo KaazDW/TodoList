@@ -7,6 +7,6 @@ and testing some notions of Javascript.
 <img src="https://github.com/KaazDW/TodoList/blob/main/assets/img/Capture.PNG">
 
 
-Note for myself : I forgot to do the function for display when a task is done. I need to fixe that.
+Note for myself : I forgot to do the function for display when a task is done.
 
 - Kaaz
